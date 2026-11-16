@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Yogyakarta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#home">ExploreJogja</a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Destinasi</a></li>
+                    <li><a href="#reservasi">Wisata</a></li>
+                    <li><a href="#contact">Hubungi Kami</a></li>
+                    <li><a href="#reservasi" class="order">Pesan Wisata</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BERANDA -->
+    <div class="wrapper">
+        <section id="home">
+            <div class="kolom">
+                <h2 style="color: rgba(237, 125, 49, 0.737);">
+                    Pesona Wisata Yogyakarta
+                </h2>
+
+                <h2 class="deskripsi">
+                    Jelajahi keindahan Yogyakarta yang penuh dengan
+                    budaya, sejarah, dan keindahan alam.<br>
+                    Nikmati berbagai destinasi wisata menarik,
+                    mulai dari candi bersejarah hingga pantai yang indah.<br>
+                    Temukan pengalaman liburan yang menyenangkan
+                    bersama ExploreJogja!
+                </h2>
+
+                <p>
+                    <a href="#services" class="reservasi">
+                        Jelajahi Sekarang
+                    </a>
+                </p>
+            </div>
+
+            <img src="tugujogja.jpg" class="gambar">
+        </section>
+    </div>
+
+    <!-- DESTINASI WISATA -->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Destinasi Wisata Yogyakarta</h2>
+                <p>Temukan berbagai tempat wisata menarik di Yogyakarta.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="borobudur.jpg">
+                    </div>
+                    <h3>Candi Borobudur</h3>
+                    <p>Candi Borobudur adalah candi Buddha terbesar di dunia yang dibangun pada abad ke-8 di Magelang, Jawa Tengah, dengan 2.672 panel relief dan 504 stupa Buddha, serta menjadi tempat wisata dan ziarah yang terkenal hingga ke seluruh dunia.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="prambanan2.jpg">
+                    </div>
+                    <h3>Candi Prambanan</h3>
+                    <p>Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9 di perbatasan Yogyakarta dan Jawa Tengah, terkenal dengan tiga candi utama untuk Dewa Brahma, Wisnu, dan Siwa, serta keindahan arsitektur dan relief Ramayana-nya.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="malioboro.jpg">
+                    </div>
+                    <h3>Jalan Malioboro</h3>
+                    <p>
+                    Jalan Malioboro adalah pusat perbelanjaan dan wisata terkenal di Yogyakarta yang dipenuhi toko batik, oleh-oleh, kuliner kaki lima, dan seniman jalanan, serta menjadi tempat favorit wisatawan untuk jalan santai dan menikmati suasana khas Jogja.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="heha.jpg">
+                    </div>
+                    <h3>HeHa Sky View</h3>
+                    <p>Wisata dengan pemandangan alam dari ketinggian dan berbagai spot foto yang menarik.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="keraton2.jpg">
+                    </div>
+                    <h3>Keraton Yogyakarta</h3>
+                    <p>Keraton Yogyakarta adalah istana Kesultanan Yogyakarta yang dibangun tahun 1755 dan menjadi pusat budaya Jawa dengan bangunan bersejarah, museum, dan pertunjukan seni tradisional.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="tamansari.jpg">
+                    </div>
+                    <h3>Taman Sari</h3>
+                    <p>Bekas taman kerajaan Keraton Yogyakarta yang memiliki arsitektur unik dan nilai sejarah.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PEMESANAN DAN MAPS -->
+<section) class="book-section" id="reservasi">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Pesan Tiket Wisata</h2>
+            <p>Isi formulir untuk melakukan pemesanan tiket wisata.</p>
+        </div>
+
+        <div class="book-container">
+
+            <div class="book-form">
+                <form action="https://wa.me/6285150685545"
+                      method="get" target="_blank">
+
+                    <input type="text" name="text"
+                        placeholder="Nama Lengkap" required>
+
+                    <input type="tel"
+                        placeholder="Nomor Telepon" required>
+
+                    <input type="email"
+                        placeholder="Email" required>
+
+                    <select required>
+                        <option value="">Pilih Destinasi Wisata</option>
+                        <option>Candi Borobudur</option>
+                        <option>Candi Prambanan</option>
+                        <option>Jalan Malioboro</option>
+                        <option>HeHa Sky View</option>
+                        <option>Pantai Parangtritis</option>
+                        <option>Taman Sari</option>
+                    </select>
+
+                    <select required>
+                        <option value="">Jumlah Tiket</option>
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3 Orang</option>
+                        <option>4 Orang</option>
+                        <option>5 Orang</option>
+                    </select>
+
+                    <input type="date" required>
+
+                    <button type="submit">
+                        PESAN SEKARANG
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- GOOGLE MAPS DIY -->
+            <div class="book-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Daerah%20Istimewa%20Yogyakarta%2C%20Indonesia&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section)
+  <!-- FOOTER -->
+    <footer)) class="footer" id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-column contact">
+                <h2>Hubungi Kami</h2>
+
+                <div class="contact-item">
+                    <span>Daerah Istimewa Yogyakarta</span>
+                </div>
+
+               <div> <a href="https://wa.me/qr/OFSPXG333G6PJ1">WA: 085150685545</a</div>
+
+                <div class="contact-item">
+                    <span>ExploreJogja@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="footer-column about">
+                <h2>ExploreJogja</h2>
+
+                <div class="deskripsi-footer">
+                    <span>Jelajahi Keindahan Wisata Yogyakarta</span>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.jpg" style="width: 30px;"></a>
+                    <a href="#"><img src="instagram.jpg" style="width: 30px;"></a>
+                    <a href="#"><img src="X.jpg" style="width: 30px;"></a>
+                </div>
+            </div>
+
+            <div class="footer-column about">
+                <h2>Jam Pelayanan</h2>
+
+                <div class="deskripsi-footer">
+                    <span>Setiap Hari</span>
+                    <span>08.00 - 17.00 WIB</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reserved">
+            <span>© 2026 ExploreJogja. All Rights Reserved.</span>
+        </div>
+
+    </footer>
+</body>
+</html>
