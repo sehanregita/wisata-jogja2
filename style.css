@@ -1,0 +1,494 @@
+
+/* =========================
+   EXPLORE JOGJA
+   Tema Tradisional Modern
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #faf5eb;
+    color: #403125;
+}
+
+/* WARNA UTAMA */
+:root {
+    --coklat: #654321;
+    --coklat-gelap: #382417;
+    --emas: #c49a45;
+    --krem: #faf5eb;
+    --putih: #ffffff;
+    --hijau: #586b43;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background: var(--coklat-gelap);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 4px solid var(--emas);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--emas);
+    letter-spacing: 2px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: var(--emas);
+}
+
+.order {
+    background: var(--emas);
+    color: #382417 !important;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.order:hover {
+    background: white;
+}
+
+/* BERANDA */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 90px 0;
+    min-height: 500px;
+    position: relative;
+}
+
+.kolom {
+    flex: 1;
+}
+
+.kolom h2:first-child {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.deskripsi {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #655344;
+    font-weight: normal;
+}
+
+.gambar {
+    width: 48%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 7px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.reservasi {
+    display: inline-block;
+    background: var(--coklat);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.reservasi:hover {
+    background: var(--emas);
+    color: var(--coklat-gelap);
+}
+
+/* ORNAMEN PEMBATAS */
+.services {
+    padding: 80px 0;
+    background-color: #eee3d0;
+    background-image:
+        radial-gradient(circle, rgba(196,154,69,0.13) 2px, transparent 3px);
+    background-size: 30px 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: var(--coklat);
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #705b43;
+}
+
+/* KARTU DESTINASI */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 5px solid var(--emas);
+    box-shadow: 0 5px 18px rgba(70,45,20,0.12);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(70,45,20,0.2);
+}
+
+.service-icon img {
+    width: 100% !important;
+    height: 210px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: var(--coklat);
+    font-size: 20px;
+    margin: 18px 0 10px;
+}
+
+.service-card p {
+    color: #705b43;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESERVASI */
+.book-section {
+    padding: 80px 0;
+    background: var(--krem);
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--emas);
+}
+
+.book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.book-form input,
+.book-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d8c5a6;
+    border-radius: 8px;
+    background: #faf7f0;
+    font-size: 14px;
+    outline: none;
+}
+
+.book-form input:focus,
+.book-form select:focus {
+    border-color: var(--emas);
+}
+
+.book-form button {
+    padding: 15px;
+    background: var(--coklat);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-form button:hover {
+    background: var(--emas);
+    color: var(--coklat-gelap);
+}
+
+.book-map {
+    height: 100%;
+    min-height: 350px;
+    border: 5px solid #e5d2ad;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.book-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: none;
+}
+
+/* KOMENTAR PENGUNJUNG */
+.testimonial {
+    padding: 80px 0;
+    background: #eee3d0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid var(--emas);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    color: #705b43;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.testimonial-card h3 {
+    color: var(--coklat);
+    margin-top: 20px;
+}
+
+.testimonial-card span {
+    color: var(--hijau);
+    font-size: 13px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--coklat-gelap);
+    color: white;
+    padding: 55px 0 20px;
+    border-top: 5px solid var(--emas);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.footer-column h2 {
+    color: var(--emas);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #eee0c9;
+}
+
+.deskripsi-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #eee0c9;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 7px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons img {
+    border-radius: 50%;
+}
+
+.reserved {
+    text-align: center;
+    border-top: 1px solid #806345;
+    margin-top: 45px;
+    padding-top: 20px;
+    color: #d9c6a6;
+    font-size: 13px;
+}
+
+/* ORNAMEN BATIK */
+.section-title h2::after {
+    content: " ✦ ❖ ✦ ";
+    display: block;
+    color: var(--emas);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+
+    nav .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu ul li {
+        margin: 0;
+    }
+
+    .menu ul li a {
+        font-size: 12px;
+    }
+
+    #home {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .kolom h2:first-child {
+        font-size: 25px;
+    }
+
+    .deskripsi {
+        font-size: 14px;
+    }
+
+    .gambar {
+        width: 100%;
+        height: 250px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 12px;
+    }
+
+    .service-icon img {
+        height: 140px !important;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
+
+    .book-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+/* RESPONSIVE HP KECIL */
+@media screen and (max-width: 480px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .service-icon img {
+        height: 220px !important;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+}
